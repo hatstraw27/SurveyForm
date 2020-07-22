@@ -1,0 +1,92 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    background-image: url('Heimdallr.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    font-family: 'Raleway', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 1.6rem;
+    line-height: 1.6;  
+}
+
+#main{
+    max-width: 800px; /* max width of the survey box */
+    margin: 30 auto 30 auto; /* To center the box middle of the page */
+}
+
+header{
+    text-align: center;
+}
+
+header p{
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+    font-style: italic;
+}
+
+#survey-form{
+    border: 1px double #ccc;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.2);
+    background: rgb(199,0,57);
+    background: linear-gradient(0deg, rgba(199,0,57,0.3) 0%, rgba(255,87,51,0.3) 51%, rgba(255,195,0,0.3) 100%);
+    padding: 5rem;
+}
+
+label,input{
+    display: inline-block;
+    font-size: medium;
+}
+
+input[type=text],[type=email],[type=number],select,textarea{
+    width: 100%;
+    height: auto;
+    margin: 0.7rem 0 2.5rem 0;
+}
+
+fieldset{
+    border: none;
+    margin:2.5rem 0 2.5rem -13px;
+}
+
+@media screen and (max-width: 650px) { 
+    #survey-form{
+        padding: 1.5rem;
+    }
+    fieldset span{ 
+        /* need to find a way to align check box properly with label */
+    } 
+} 
+
+fieldset legend{
+    margin-bottom: 1rem;
+}
+
+textarea{
+    resize: vertical;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+input[type=submit]{
+    width: 100%;
+    height: auto;
+    font-size:large;
+    background-color: rgba(76,175,80,0.7);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-size: larger;
+    background-color: #45a049;
+}
+
+
+

@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main id="main">
+
+        <header>
+            <h1 id="title">RPG Survey Form</h1>
+            <p id="description">Thanks for taking the time helps us improve rpg genre.</p>
+        </header>
+
+        <form id="survey-form" action="#">
+            
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="number"id="number-label">Age <em>(optional)</em></label>
+            <input type="number" id="number" name="number" placeholder="Age" required min="10" max="99">
+
+            <label for="dropdown">What do you know about RPGs ?</label>
+            <select id="dropdown" name="dropdown"> 
+                <option value="unware">Completely Unware</option>
+                <option value="notMuch">Not very much</option>
+                <option value="quite">I know quite a bit</option>
+                <option value="wellVersed">I am well-versed</option>
+            </select>
+
+            <fieldset>
+                <legend> What is your favourite aspect in a game ?</legend>
+                <input id="one" type="radio" name="favourite" value="one">
+                <label for="one">Character Development + Interaction</label><br/>
+                <input id="two" type="radio" name="favourite" value="two">
+                <label for="two">Cutscene & Dialogue</label><br/>
+                <input id="three" type="radio" name="favourite" value="three">
+                <label for="three">Visual / Audible Quality</label><br/>
+                <input id="four" type="radio" name="favourite" value="four">
+                <label for="four">Battle Mechanics</label><br/>
+                <input id="five" type="radio"  name="favourite" value="five">
+                <label for="five">User interface</label><br/>
+                <input id="six" type="radio" name="favourite" value="six">
+                <label for="six">Duration of story</label><br/>
+                <input id="seven" type="radio" name="favourite" value="seven">
+                <label for="seven">Simplicity/Complexity</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What is your favourite type of genre ?</legend>
+                <input id="action" type="checkbox" name="genre" value="action">
+                <label for="action">Action Rpg <span>(Diablo & The Witcher)</span></label><br/>
+                <input id="jrpg" type="checkbox" name="genre" value="jrpg">
+                <label for="jrpg">JRPGs <span>(Final Fantasy & Dragon Quest)</span></label><br/>
+                <input id="tactical" type="checkbox" name="genre" value="tactical">
+                <label for="tactical">Tactical Style Rpg <span>(Fire Emblem & Disgaea)</span></label><br/>
+                <input id="sandbox" type="checkbox" name="genre" value="sandbox">
+                <label for="sandbox">Open World Rpg <span>(The Elder Scroll & Fallout Series)</span></label><br/>
+                <input id="mmorpg" type="checkbox" name="genre" value="mmorpg">
+                <label for="mmorpg">Massively multiplayer online Rpg <span>(World of Warcraft & Runescape)</span></label><br/>
+                <input id="roguelike" type="checkbox" name="genre" value="roguelike">
+                <label for="roguelike">Roguelike Style Rpg <span>(Don't Starve & The Binding of Isaac)</span></label><br/>
+                <input id="drpg" type="checkbox" name="genre" value="drpg">
+                <label for="drpg">First-person party-based Rpg <span>(Etrian Odyssey & Elminage)</span></label>
+            </fieldset>
+
+            <label for="comment">Thanks for your time and how was our survey ?</label>
+            <textarea id="comment" name="comment" rows=7 placeholder="Enter your comments here"></textarea>
+        
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
